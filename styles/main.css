@@ -1,0 +1,118 @@
+@import 'font.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: IRANSans;
+  box-sizing: border-box;
+}
+
+a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 300ms;
+}
+
+a:hover, a:active {
+  color: white;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  padding: 10px 200px;
+  align-items: center;
+  background-color: black;
+  justify-content: space-between;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.header ul li {
+  padding: 0 15px;
+  font-size: 19px;
+}
+
+.main-link {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.background {
+  width: 100%;
+  color: white;
+  height: 100vh;
+  padding-top: 10%;
+  text-align: right;
+  padding-right: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('../images/background1.jpg');
+}
+
+.intro {
+  font-size: 50px;
+}
+
+.info {
+  font-size: 20px;
+}
+
+.background div {
+  display: flex;
+  margin-top: 15px;
+}
+
+.background img {
+  width: 45px;
+  height: 45px;
+  margin: 0 0 0 10px;
+}
+
+section {
+  color: white;
+  padding: 80px 25%;
+  text-align: center;
+  background-color: black;
+}
+
+.articles-title {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+article {
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .background {
+    padding-top: 200px;
+    padding-right: 50px;
+    background-image: url('../images/background3.jpg');
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .background {
+    padding-top: 25%;
+    padding-right: 15%;
+    background-image: url('../images/background2.jpg');
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .background {
+    padding-top: 20%;
+    padding-right: 25%;
+    background-image: url('../images/background1.jpg');
+  }
+}
