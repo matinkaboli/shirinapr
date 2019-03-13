@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title><-BlogAndPostTitle-></title>
@@ -14,7 +14,7 @@
     <meta property="og:description" content="<-BlogDescription->">
 
     <link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
 
   </head>
   <body>
@@ -50,11 +50,19 @@
     <section>
       <p class="articles-title" id="articles-title">مطالب</p>
 
-      <BLOGFA>
+      <div>
         <article>
           <a href="<-PostLink->" class="post-link"><-PostTitle-></a>
+          <p class="post-content"><-PostContent-></p>
+          <p class="post-time">
+             <-PostDate-> ساعت <-PostTime->
+
+             <span class="post-comment"><BlogComment><span dir="rtl" id="comment_<-PostId->"></span></BlogComment></span>
+          </p>
         </article>
-      </BLOGFA>
+
+        <hr>
+      </div>
     </section>
   </body>
 </html>
